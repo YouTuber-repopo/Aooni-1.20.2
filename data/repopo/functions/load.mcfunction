@@ -11,6 +11,8 @@
 #define team Demon 青鬼チーム
 #define team Guest 観客チーム
 
+#alias vector lobby 2 24 0
+
 
 # スコアボード設定
     scoreboard objectives add System dummy
@@ -49,6 +51,14 @@
     team modify Guest color gray
     team modify Guest nametagVisibility hideForOtherTeams
     team modify Guest suffix "[観客]"
+
+
+# ゲームルール設定
+    gamerule sendCommandFeedback false
+    gamerule keepInventory true
+    gamerule showDeathMessages true
+
+    spawnpoint @a 2 24 0
 
 
 # りろーでっど！
