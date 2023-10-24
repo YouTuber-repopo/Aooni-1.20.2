@@ -1,6 +1,9 @@
 #> repopo:load
 # リロード処理
 
+#define score_holder $CountDownSetting カウントダウンの設定
+#define score_holder $NumberOfCountDown カウントダウン
+
 #define score_holder $NumberOfPlayers プレイヤーの数
 #define score_holder $NumberOfHiroshi ひろしの数
 #define score_holder $NumberOfDemon 青鬼の数
@@ -22,6 +25,9 @@
 
     scoreboard players reset * System
     scoreboard players reset * LobbyInfo
+
+    scoreboard players set $CountDownSetting System 3
+    scoreboard players operation $NumberOfCountDown System = $CountDownSetting System
 
     scoreboard players set $NumberOfHiroshi System 0
     scoreboard players set $NumberOfDemon System 0
