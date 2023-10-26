@@ -2,13 +2,14 @@
 # ゲームスタート時起動処理
 
 
-# カウントダウンが0ならゲームスタート
-    execute if score $NumberOfCountDown System matches 0 run function repopo:start/_
-    execute if score $NumberOfCountDown System matches 0 run return 0
+# 既にプレイ中ならエラー
+    execute if score $IsPlaying System matches 1 run function repopo:system/error_template {"error": '"既にプレイ中です。"'}
+    execute if score $IsPlaying System matches 1 run return 1
 
-# カウントダウン
-    title @a title [{"text": "-----", "color": "blue", "bold": true}, {"score": {"objective": "System", "name": "$NumberOfCountDown"}}, "-----"]
-    execute as @a at @s run playsound block.anvil.land master @s ~ ~ ~ 1 1 1
+# プレイ中に設定
+    scoreboard players set $IsPlaying System 1
 
-    scoreboard players remove $NumberOfCountDown System 1
-    schedule function repopo:start 1s
+
+# カウントダウンを開始
+    scoreboard players operation $NumberOfCountDown System = $CountDownSetting System
+    function repopo:start/countdown
