@@ -10,3 +10,7 @@
     scoreboard players operation $NumberOfPlayers System += $NumberOfDemon System
     
     scoreboard players operation 参加人数: LobbyInfo = $NumberOfPlayers System
+
+
+# 青鬼空腹度更新
+    effect give @a[team=Demon, nbt={foodLevel: 0}] saturation 1 5 true
