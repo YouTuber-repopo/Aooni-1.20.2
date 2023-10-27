@@ -10,6 +10,10 @@
     scoreboard players set $IsPlaying System 1
 
 
+# エフェクト等設定
+    execute as @a[team=Hiroshi] run function repopo:start/hiroshi_effects
+
+
 # カウントダウンを開始
     scoreboard players operation $NumberOfCountDown System = $CountDownSetting System
     function repopo:start/countdown
