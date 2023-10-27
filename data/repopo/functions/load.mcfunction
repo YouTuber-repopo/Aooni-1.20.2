@@ -17,6 +17,17 @@
 #define team Guest 観客チーム
 
 #alias vector lobby 2 24 0
+#alias vector Entrance 20 24 -27
+#alias vector HiroshiRespawnPoint 67 25 16
+#alias vector DemonSpawnPoint 69.5 24 -16.5
+#alias vector DemonSelectRoomHead -12 23 -12
+
+#alias vector DemonStopBlock 67 24 -17
+#alias vector AthleticLeftBlock 14 23 19
+#alias vector AthleticCenterBlock 8 23 19
+#alias vector AthleticRightBlock 2 23 19
+#alias vector StartStopBlockStartPoint 18 23 -13
+#alias vector StartStopBlockEndPoint 19 27 -13
 
 
 # スコアボード設定
@@ -69,6 +80,16 @@
     gamerule showDeathMessages true
 
     spawnpoint @a 2 24 0
+
+
+# ブロック設置
+    setblock 67 24 -17 lapis_block
+
+    setblock 14 23 19 lapis_block
+    setblock 8 23 19 lapis_block
+    setblock 2 23 19 lapis_block
+
+    fill 18 23 -13 19 27 -13 air
 
 
 # りろーでっど！
