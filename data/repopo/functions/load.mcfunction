@@ -19,7 +19,7 @@
 #alias vector lobby 2 24 0
 #alias vector Entrance 20 24 -27
 #alias vector HiroshiRespawnPoint 67 25 16
-#alias vector DemonSpawnPoint 69.5 24 -16.5
+#alias vector DemonSpawnPoint 69 24 -17
 #alias vector DemonSelectRoomHead -12 23 -12
 
 #alias vector DemonStopBlock 67 24 -17
