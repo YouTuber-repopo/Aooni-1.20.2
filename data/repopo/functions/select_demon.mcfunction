@@ -3,10 +3,10 @@
 
 
 # 青鬼を範囲内から選ぶ
-    execute positioned -12 23 -12 run team join Demon @r[distance=..4]
+    execute positioned -12 23 -12 run team join Demon @r[distance=..4, team=Hiroshi]
 
 # 範囲内にいなければエラー
-    execute unless entity @a[team=Demon] run function repopo:system/error_template {"error": '"抽選部屋に青鬼がいません"'}
+    execute unless entity @a[team=Demon] run function repopo:system/error_template {"error": '"抽選部屋にプレイヤーがいません"'}
     execute unless entity @a[team=Demon] run return 1
 
 
