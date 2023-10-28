@@ -62,16 +62,13 @@
 
     team modify Hiroshi deathMessageVisibility never
     team modify Hiroshi nametagVisibility never
-    team modify Hiroshi suffix "[ひろし]"
 
     team modify Demon color blue
     team modify Demon deathMessageVisibility never
     team modify Demon nametagVisibility never
-    team modify Demon suffix "[青鬼]"
 
     team modify Guest color gray
     team modify Guest nametagVisibility hideForOtherTeams
-    team modify Guest suffix "[観客]"
 
 
 # ゲームルール設定
