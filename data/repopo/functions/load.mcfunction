@@ -6,6 +6,8 @@
 
 #define score_holder $IsPlaying プレイ中か否か
 
+#define score_holder $RemainSetting 最大残機
+
 #define score_holder $NumberOfPlayers プレイヤーの数
 #define score_holder $NumberOfHiroshi ひろしの数
 #define score_holder $NumberOfDemon 青鬼の数
@@ -33,22 +35,28 @@
 # スコアボード設定
     scoreboard objectives add System dummy
     scoreboard objectives add LobbyInfo dummy {"text": "鯖情報", "color": "yellow", "bold": true}
+    scoreboard objectives add Death killedByTeam.blue
 
     scoreboard objectives setdisplay sidebar LobbyInfo
 
     scoreboard players reset * System
     scoreboard players reset * LobbyInfo
+    scoreboard players reset * Death
 
     scoreboard players set $CountDownSetting System 3
     scoreboard players operation $NumberOfCountDown System = $CountDownSetting System
 
     scoreboard players set $IsPlaying System 0
 
+    scoreboard players set $RemainSetting System 2
+
     scoreboard players set $NumberOfHiroshi System 0
     scoreboard players set $NumberOfDemon System 0
     scoreboard players set $NumberOfPlayers System 0
 
     scoreboard players set 参加人数: LobbyInfo 0
+
+    scoreboard players set @a Death 0
 
 
 # チーム設定

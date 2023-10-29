@@ -13,3 +13,5 @@
     gamemode adventure
 
     effect give @s weakness infinite 255 true
+
+    spawnpoint @s 67 25 16
