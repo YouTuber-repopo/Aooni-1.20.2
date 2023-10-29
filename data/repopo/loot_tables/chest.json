@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": { "min": 3, "max": 5 },
+            "entries": [{ "type": "minecraft:item", "name": "minecraft:cooked_porkchop" }]
+        }
+    ]
+}
