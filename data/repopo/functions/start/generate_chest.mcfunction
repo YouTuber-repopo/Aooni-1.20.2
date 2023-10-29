@@ -3,5 +3,4 @@
 
 
 # チェスト
-    setblock ~ ~ ~ air replace
-    setblock ~ ~ ~ chest{LootTable: "repopo:chest"}
+    setblock ~ ~ ~ chest{LootTable: "repopo:chest"} destroy

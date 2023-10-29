@@ -38,6 +38,8 @@
 
     execute positioned 44 42 -21 run function repopo:start/generate_chest
 
+    kill @e[type=item]
+
 
 # カウントダウンを開始
     scoreboard players operation $NumberOfCountDown System = $CountDownSetting System
