@@ -12,6 +12,7 @@
 
 # エフェクト等設定
     execute as @a[team=Hiroshi] run function repopo:start/hiroshi_effects
+    execute as @a[team=Guest] run function repopo:start/guest_effects
 
 
 # カウントダウンを開始
