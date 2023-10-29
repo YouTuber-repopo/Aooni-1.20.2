@@ -14,3 +14,7 @@
 
 # 青鬼空腹度更新
     effect give @a[team=Demon, nbt={foodLevel: 0}] saturation 1 5 true
+
+
+# チーム無所属プレイヤーを観客チームに入れる
+    team join Guest @a[team=]
