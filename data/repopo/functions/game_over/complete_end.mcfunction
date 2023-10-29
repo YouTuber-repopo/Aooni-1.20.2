@@ -10,6 +10,8 @@
 # リセット
     effect clear @a
     clear @a
+    effect give @s instant_health 1 124 true
+    effect give @s saturation 1 124 true
 
 
 # 全プレイヤーロビーTP
