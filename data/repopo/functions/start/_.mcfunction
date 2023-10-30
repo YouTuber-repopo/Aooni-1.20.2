@@ -13,6 +13,10 @@
     fill 18 23 -13 19 27 -13 glass
 
 
+# 時間設定
+    scoreboard players operation $Time System = $TimeLimit System
+
+
 # 演出
     title @a title {"text": "青鬼ごっこ START", "color": "blue", "bold": true}
     execute as @a at @s run playsound entity.ender_dragon.ambient master @s ~ ~ ~ 1 1 1

@@ -6,13 +6,6 @@
     scoreboard players set $IsPlaying System 0
 
 
-# 演出
-    title @a title {"text": "青鬼ごっこ", "color": "blue", "bold": true}
-    title @a subtitle {"text": "終了", "color": "yellow"}
-
-    execute as @a at @s run playsound ui.toast.challenge_complete master @s ~ ~ ~ 1 1 1
-
-
 # ブロック関連
     setblock 67 24 -17 lapis_block
 
@@ -21,6 +14,17 @@
     setblock 2 23 19 lapis_block
 
     fill 18 23 -13 19 27 -13 air
+
+
+# 時間設定
+    scoreboard players set $Time System -1
+
+
+# 演出
+    title @a title {"text": "青鬼ごっこ", "color": "blue", "bold": true}
+    title @a subtitle {"text": "終了", "color": "yellow"}
+
+    execute as @a at @s run playsound ui.toast.challenge_complete master @s ~ ~ ~ 1 1 1
 
 
 # 10秒後完全終了

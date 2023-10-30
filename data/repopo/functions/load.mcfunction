@@ -8,6 +8,9 @@
 
 #define score_holder $RemainSetting 最大残機
 
+#define score_holder $TimeLimit 制限時間設定
+#define score_holder $Time 時間
+
 #define score_holder $NumberOfPlayers プレイヤーの数
 #define score_holder $NumberOfHiroshi ひろしの数
 #define score_holder $NumberOfDemon 青鬼の数
@@ -49,6 +52,9 @@
     scoreboard players set $IsPlaying System 0
 
     scoreboard players set $RemainSetting System 2
+
+    scoreboard players set $TimeLimit System 12000
+    scoreboard players operation $Time System = $TimeLimit System
 
     scoreboard players set $NumberOfHiroshi System 0
     scoreboard players set $NumberOfDemon System 0
