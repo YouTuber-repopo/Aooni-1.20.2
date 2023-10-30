@@ -18,3 +18,7 @@
 
 # チーム無所属プレイヤーを観客チームに入れる
     team join Guest @a[team=]
+
+
+# プレイ中ファンクションを実行
+    execute if score $IsPlaying System matches 1 run function repopo:system/playing
