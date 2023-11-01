@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 27,
+            "entries": [{ "type": "minecraft:item", "name": "minecraft:oak_pressure_plate", "functions": [{ "function": "minecraft:set_nbt", "tag": "{CanPlaceOn:[\"minecraft:black_wool\"]}" }] }]
+        },
+        {
+            "rolls": 1,
+            "entries": [{ "type": "minecraft:loot_table", "name": "repopo:chest" }]
+        }
+    ]
+}
