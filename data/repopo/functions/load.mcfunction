@@ -38,13 +38,15 @@
 # スコアボード設定
     scoreboard objectives add System dummy
     scoreboard objectives add LobbyInfo dummy {"text": "鯖情報", "color": "yellow", "bold": true}
-    scoreboard objectives add Death killedByTeam.blue
+    scoreboard objectives add Death deathCount
+    scoreboard objectives add IsDeath deathCount
 
     scoreboard objectives setdisplay sidebar LobbyInfo
 
     scoreboard players reset * System
     scoreboard players reset * LobbyInfo
     scoreboard players reset * Death
+    scoreboard players reset * IsDeath
 
     scoreboard players set $CountDownSetting System 3
     scoreboard players operation $NumberOfCountDown System = $CountDownSetting System
@@ -63,6 +65,7 @@
     scoreboard players set 参加人数: LobbyInfo 0
 
     scoreboard players set @a Death 0
+    scoreboard players set @a IsDeath 0
 
 
 # チーム設定

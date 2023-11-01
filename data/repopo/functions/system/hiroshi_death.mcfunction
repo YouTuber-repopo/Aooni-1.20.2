@@ -11,6 +11,3 @@
 # リスポーン地点処理
     execute if score @s Death > $RemainSetting System run spawnpoint @s 2 24 0
 
-
-# 実績取り消し
-    advancement revoke @s only repopo:death
