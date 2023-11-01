@@ -81,8 +81,3 @@
 
 # アイテム消す
     kill @e[type=item]
-
-
-# 演出
-    tellraw @s {"text": "チェストを生成しました。", "bold": true, "color": "gold"}
-    execute at @s run playsound block.note_block.pling master @s ~ ~ ~ 1 2 1

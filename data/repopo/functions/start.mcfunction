@@ -15,6 +15,10 @@
     execute as @a[team=Guest] run function repopo:start/guest_effects
 
 
+# チェスト生成
+    function repopo:start/generate_chest
+
+
 # カウントダウンを開始
     scoreboard players operation $NumberOfCountDown System = $CountDownSetting System
     function repopo:start/countdown
