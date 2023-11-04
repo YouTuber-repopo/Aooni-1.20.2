@@ -14,3 +14,7 @@
 
 # エフェクト処理
     effect give @a[team=Hiroshi] weakness infinite 255 true
+
+
+# 五階解放処理
+    execute if block 36 42 -25 blue_wool run fill 37 44 -25 37 45 -24 air
