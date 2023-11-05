@@ -2,7 +2,7 @@
 # ひろし死亡処理
 
 # 演出
-    tellraw @a [{"selector": "@s", "color": "blue"}, "は青鬼に食べられました"]
+    tellraw @a [{"selector": "@s"}, {"text":"は青鬼に食べられました", "color": "blue"}]
 
 
 # ひろしエフェクト等設定
