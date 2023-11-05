@@ -58,7 +58,7 @@
 
     scoreboard players set $RemainSetting System 2
 
-    scoreboard players set $TimeLimit System 12000
+    scoreboard players set $TimeLimit System 18000
     scoreboard players operation $Time System = $TimeLimit System
     
     scoreboard players set $UndergroundKeyChestNumber System 0
