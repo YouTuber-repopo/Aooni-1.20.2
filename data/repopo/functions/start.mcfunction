@@ -23,6 +23,7 @@
 
 # 残機リセット
     scoreboard players reset @a Death
+    scoreboard players reset @a IsDeath
 
 
 # チェスト生成
