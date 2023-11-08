@@ -4,7 +4,11 @@
 
 # 時間処理
     scoreboard players remove $Time System 1
+
+
+# ゲームオーバー処理
     execute if score $Time System matches 0 run function repopo:game_over
+    execute unless entity @a[team=Hiroshi] run function repopo:game_over
 
 
 # 死亡処理
