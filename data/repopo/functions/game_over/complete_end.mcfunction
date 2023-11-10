@@ -10,6 +10,7 @@
 # リセット
     effect clear @a
     clear @a
+    tag @a remove Escapee
     effect give @a instant_health 1 124 true
     effect give @a saturation 1 124 true
     spawnpoint @a 2 24 0

@@ -8,6 +8,9 @@
 # ロビーにtp
     tp @s 2 24 0
 
+# 脱出済みタグをつける
+    tag @s add Escapee
+
 
 # 観客にする
     team join Guest @s

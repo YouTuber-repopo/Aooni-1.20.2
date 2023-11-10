@@ -26,6 +26,10 @@
 
     execute as @a at @s run playsound ui.toast.challenge_complete master @s ~ ~ ~ 1 1 1
 
+    team join Hiroshi @a[tag=Escapee]
+    tellraw @a "脱出者"
+    tellraw @a {"selector": "@a[tag=Escapee]", "color": "yellow", "bold": true}
+
 
 # 10秒後完全終了
     schedule function repopo:game_over/complete_end 10s

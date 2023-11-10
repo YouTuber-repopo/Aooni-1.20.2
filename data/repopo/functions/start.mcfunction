@@ -8,6 +8,8 @@
 #alias vector 5FWhiteStopTop 77 49 -25
 #alias vector 5FWhiteStopBottom 77 48 -25
 
+#define tag Escapee 脱出者
+
 
 # 既にプレイ中ならエラー
     execute if score $IsPlaying System matches 1 run function repopo:system/error_template {"error": '"既にプレイ中です。"'}
