@@ -1,8 +1,11 @@
 #> repopo:load
 # リロード処理
 
-#define score_holder $CountDownSetting カウントダウンの設定
-#define score_holder $NumberOfCountDown カウントダウン
+#define score_holder #20 20
+
+#define score_holder $CountDownSetting ゲーム終了カウントダウンの設定
+#define score_holder $CountDownSettingTick ゲーム終了カウントダウンの設定のtick
+#define score_holder $NumberOfCountDown ゲーム終了カウントダウン
 
 #define score_holder $IsPlaying プレイ中か否か
 
@@ -51,7 +54,11 @@
     scoreboard players reset * Death
     scoreboard players reset * IsDeath
 
-    scoreboard players set $CountDownSetting System 3
+    scoreboard players set #20 System 20
+
+    scoreboard players set $CountDownSetting System 10
+    scoreboard players operation $CountDownSettingTick System = $CountDownSetting System
+    scoreboard players operation $CountDownSettingTick System *= #20 System
     scoreboard players operation $NumberOfCountDown System = $CountDownSetting System
 
     scoreboard players set $IsPlaying System 0

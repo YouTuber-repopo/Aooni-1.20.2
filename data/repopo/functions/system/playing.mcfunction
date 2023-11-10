@@ -7,7 +7,7 @@
 
 
 # ゲームオーバー処理
-    execute if score $Time System matches 0 run function repopo:game_over
+    execute if score $Time System = $CountDownSettingTick System run function repopo:game_over/count_down
     execute unless entity @a[team=Hiroshi] run function repopo:game_over
 
 
