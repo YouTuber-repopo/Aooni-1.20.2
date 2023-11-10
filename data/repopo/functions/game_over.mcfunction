@@ -30,6 +30,12 @@
     tellraw @a "脱出者"
     tellraw @a {"selector": "@a[tag=Escapee]", "color": "yellow", "bold": true}
 
+    tellraw @a "地下解放者"
+    tellraw @a {"selector": "@a[tag=BFHero]", "color": "yellow", "bold": true}
+
+    tellraw @a "五階解放者"
+    tellraw @a {"selector": "@a[tag=5FHero]", "color": "yellow", "bold": true}
+
 
 # 10秒後完全終了
     schedule function repopo:game_over/complete_end 10s

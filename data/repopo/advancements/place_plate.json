@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "place_plate": {
+            "trigger": "placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "block_state_property",
+                        "block": "oak_pressure_plate",
+                        "properties": {}
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "repopo:system/place_plate"
+    }
+}

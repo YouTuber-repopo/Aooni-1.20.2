@@ -9,6 +9,8 @@
 #alias vector 5FWhiteStopBottom 77 48 -25
 
 #define tag Escapee 脱出者
+#define tag 5FHero 五階解放者
+#define tag BFHero 地下解放者
 
 
 # 既にプレイ中ならエラー
@@ -22,6 +24,8 @@
 # エフェクト等設定
     execute as @a[team=Hiroshi] run function repopo:start/hiroshi_effects
     execute as @a[team=Guest] run function repopo:start/guest_effects
+    tag @a remove 5FHero
+    tag @a remove BFHero
 
 # 残機リセット
     scoreboard players reset @a Death

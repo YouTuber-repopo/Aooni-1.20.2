@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "place_wool": {
+            "trigger": "placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "block_state_property",
+                        "block": "blue_wool",
+                        "properties": {}
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "repopo:system/place_wool"
+    }
+}
