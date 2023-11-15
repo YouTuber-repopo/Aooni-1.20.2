@@ -1,0 +1,12 @@
+{
+    "display": {
+        "icon": { "item": "diamond_helmet" },
+        "title": "捕食者",
+        "description": "1回のゲームで100人のひろしを食べる",
+        "frame": "challenge",
+        "show_toast": true,
+        "hidden": false
+    },
+    "parent": "repopo:root",
+    "criteria": {"": { "trigger": "impossible" }}
+}

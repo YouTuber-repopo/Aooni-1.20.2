@@ -1,0 +1,12 @@
+{
+    "display": {
+        "icon": { "item": "diamond_helmet" },
+        "title": "青鬼ごっこのエンブレム",
+        "description": "",
+        "frame": "challenge",
+        "show_toast": false,
+        "hidden": false,
+        "background": "textures/block/obsidian.png"
+    },
+    "criteria": {"": { "trigger": "impossible" }}
+}

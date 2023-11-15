@@ -20,11 +20,18 @@
     scoreboard players set $Time System -1
 
 
+# エンブレム
+    advancement grant @a[team=Demon, scores={DemonKillCount=100..}] only repopo:predator
+
+
 # 演出
     title @a title {"text": "青鬼ごっこ", "color": "blue", "bold": true}
     title @a subtitle {"text": "終了", "color": "yellow"}
 
     execute as @a at @s run playsound ui.toast.challenge_complete master @s ~ ~ ~ 1 1 1
+
+    tellraw @a {"text": "青鬼ごっこ終了", "color": "yellow", "bold": true}
+    tellraw @a [{"text": "青鬼が食べた数: ", "color": "blue"}, {"score": {"objective": "DemonKillCount", "name": "@a[team=Demon, limit=1]"}}]
 
     team join Hiroshi @a[tag=Escapee]
     tellraw @a "脱出者"

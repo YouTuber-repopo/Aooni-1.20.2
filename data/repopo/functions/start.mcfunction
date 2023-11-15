@@ -11,6 +11,8 @@
 #define tag Escapee 脱出者
 #define tag 5FHero 五階解放者
 #define tag BFHero 地下解放者
+#define tag Run 走っていたか
+#define tag Inside 館の中か
 
 
 # 既にプレイ中ならエラー
@@ -22,12 +24,17 @@
 
 
 # エフェクト等設定
+    advancement grant @a only repopo:root
     execute as @a[team=Hiroshi] run function repopo:start/hiroshi_effects
     execute as @a[team=Guest] run function repopo:start/guest_effects
     tag @a remove 5FHero
     tag @a remove BFHero
+    tag @a remove Run
+    tag @a add Inside
 
-# 残機リセット
+    scoreboard players reset @a IsRun
+    scoreboard players reset @a DemonKillCount
+
     scoreboard players reset @a Death
     scoreboard players reset @a IsDeath
 

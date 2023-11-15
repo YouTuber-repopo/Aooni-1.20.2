@@ -8,3 +8,7 @@
 
 # 演出
     tellraw @a [{"selector": "@s"}, {"text": "が復活しました", "color": "blue"}]
+
+
+# 館内タグ付ける
+    tag @s add Inside

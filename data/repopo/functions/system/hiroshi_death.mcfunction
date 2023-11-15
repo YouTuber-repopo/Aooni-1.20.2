@@ -11,3 +11,5 @@
 # リスポーン地点処理
     execute if score @s Death > $RemainSetting System run spawnpoint @s 2 24 0
 
+# 館内タグ消す
+    tag @s remove Inside

@@ -8,6 +8,13 @@
 # ロビーにtp
     tp @s 2 24 0
 
+# エンブレム処理
+    advancement grant @s only repopo:escape
+    execute unless entity @a[tag=Escapee] run advancement grant @s only repopo:first
+    execute unless score @s Death matches 1.. run advancement grant @s only repopo:survivor
+    execute unless entity @s[tag=Run] run advancement grant @s only repopo:no_run
+    execute unless entity @s[tag=Run] unless score @s Death matches 1.. run advancement grant @s only repopo:difficulty
+
 # 脱出済みタグをつける
     tag @s add Escapee
 

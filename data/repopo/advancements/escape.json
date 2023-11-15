@@ -1,0 +1,12 @@
+{
+    "display": {
+        "icon": { "item": "diamond" },
+        "title": "青鬼ごっこの脱出者",
+        "description": "青鬼ごっこで脱出成功する",
+        "frame": "challenge",
+        "show_toast": true,
+        "hidden": false
+    },
+    "parent": "repopo:root",
+    "criteria": {"": { "trigger": "impossible" }}
+}

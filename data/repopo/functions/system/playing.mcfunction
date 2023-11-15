@@ -16,6 +16,11 @@
     scoreboard players set @a IsDeath 0
 
 
+# 走行検知処理
+    execute as @a[scores={IsRun=1}, tag=Inside] run tag @s add Run
+    scoreboard players set @a IsRun 0
+
+
 # エフェクト処理
     effect give @a[team=Hiroshi] weakness infinite 255 true
 

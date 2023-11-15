@@ -46,6 +46,8 @@
     scoreboard objectives add LobbyInfo dummy {"text": "鯖情報", "color": "yellow", "bold": true}
     scoreboard objectives add Death deathCount
     scoreboard objectives add IsDeath deathCount
+    scoreboard objectives add IsRun custom:sprint_one_cm
+    scoreboard objectives add DemonKillCount playerKillCount
 
     scoreboard objectives setdisplay sidebar LobbyInfo
 
@@ -53,6 +55,8 @@
     scoreboard players reset * LobbyInfo
     scoreboard players reset * Death
     scoreboard players reset * IsDeath
+    scoreboard players reset * IsRun
+    scoreboard players reset * DemonKillCount
 
     scoreboard players set #20 System 20
 

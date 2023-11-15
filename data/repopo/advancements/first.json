@@ -1,0 +1,12 @@
+{
+    "display": {
+        "icon": { "item": "lantern" },
+        "title": "先陣",
+        "description": "最初に玄関から脱出成功する",
+        "frame": "challenge",
+        "show_toast": true,
+        "hidden": false
+    },
+    "parent": "repopo:escape",
+    "criteria": {"": { "trigger": "impossible" }}
+}

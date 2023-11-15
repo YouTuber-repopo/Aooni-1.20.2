@@ -1,0 +1,12 @@
+{
+    "display": {
+        "icon": { "item": "nether_star" },
+        "title": "青鬼ごっこの生存者",
+        "description": "青鬼ごっこで一度も食べれずに玄関から脱出成功する",
+        "frame": "challenge",
+        "show_toast": true,
+        "hidden": false
+    },
+    "parent": "repopo:escape",
+    "criteria": {"": { "trigger": "impossible" }}
+}

@@ -1,0 +1,12 @@
+{
+    "display": {
+        "icon": { "item": "slime_ball" },
+        "title": "走れないひろし",
+        "description": "復活アスレ以外で1度も走らずに玄関から脱出成功する",
+        "frame": "challenge",
+        "show_toast": true,
+        "hidden": false
+    },
+    "parent": "repopo:escape",
+    "criteria": {"": { "trigger": "impossible" }}
+}

@@ -1,0 +1,12 @@
+{
+    "display": {
+        "icon": { "item": "end_crystal" },
+        "title": "困難を乗り越えし者",
+        "description": "青鬼ごっこで一度も食べれず、なおかつ復活アスレ以外で1度も走らずに玄関から脱出成功する",
+        "frame": "challenge",
+        "show_toast": true,
+        "hidden": false
+    },
+    "parent": "repopo:escape",
+    "criteria": {"": { "trigger": "impossible" }}
+}
